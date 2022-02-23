@@ -1,0 +1,837 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "gateKeeper",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "registry",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fsmIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "registry",
+        "type": "address"
+      }
+    ],
+    "name": "OrderCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "fromState",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "toState",
+        "type": "bytes32"
+      }
+    ],
+    "name": "StateTransition",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "CREATE_STATEMACHINE_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FINITE_STATE_MACHINE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPDATE_IPFSCONTAINERHASH_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPDATE_UIFIELDDEFINITIONS_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "_allRoles",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "_allStates",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_ipfsFieldContainerHash",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_upgradeableRegistry",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "allRoles",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "allStates",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "canEdit",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "businessUnit",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "InBoneChickenPerKg",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "WokForTwoPerPackage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "FreeRangeChickenPerChicken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "PastaSaladPerPackage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "ipfsFieldContainerHash",
+        "type": "string"
+      }
+    ],
+    "name": "create",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "fsmIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "businessUnit",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "InBoneChickenPerKg",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "WokForTwoPerPackage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "FreeRangeChickenPerChicken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "PastaSaladPerPackage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "ipfsFieldContainerHash",
+        "type": "string"
+      }
+    ],
+    "name": "edit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gateKeeper",
+    "outputs": [
+      {
+        "internalType": "contract GateKeeper",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "state",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getAllowedFunctionsForState",
+    "outputs": [
+      {
+        "internalType": "bytes4[]",
+        "name": "",
+        "type": "bytes4[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "state",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getAllowedRolesForState",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "fsmIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "getByIndex",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "currentState",
+            "type": "bytes32"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "fromState",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "toState",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "address",
+                "name": "actor",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct FiniteStateMachine.Transition[]",
+            "name": "transitions",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "createdAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct FiniteStateMachine.StateMachine",
+        "name": "item",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "DID",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "businessUnit",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "InBoneChickenPerKg",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "InBoneChickenTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "WokForTwoPerPackage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "WokForTwoTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "FreeRangeChickenPerChicken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "FreeRangeChickenTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PastaSaladPerPackage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PastaSaladTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "ipfsFieldContainerHash",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct Orders.StateMachineMeta",
+        "name": "meta",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "state",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getCallbacksForState",
+    "outputs": [
+      {
+        "internalType": "bytes4[]",
+        "name": "",
+        "type": "bytes4[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getContents",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "currentState",
+            "type": "bytes32"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "fromState",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "toState",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "address",
+                "name": "actor",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct FiniteStateMachine.Transition[]",
+            "name": "transitions",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "createdAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct FiniteStateMachine.StateMachine[]",
+        "name": "registry",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "DID",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "businessUnit",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "InBoneChickenPerKg",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "InBoneChickenTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "WokForTwoPerPackage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "WokForTwoTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "FreeRangeChickenPerChicken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "FreeRangeChickenTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PastaSaladPerPackage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PastaSaladTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "ipfsFieldContainerHash",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct Orders.StateMachineMeta[]",
+        "name": "meta",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getIndex",
+    "outputs": [
+      {
+        "internalType": "string[]",
+        "name": "index",
+        "type": "string[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getIndexLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "length",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getIpfsFieldContainerHash",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "state",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getNextStatesForState",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "test",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "state",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPreFunctionForState",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "state",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPreconditionsForState",
+    "outputs": [
+      {
+        "internalType": "bytes4[]",
+        "name": "",
+        "type": "bytes4[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getUIFieldDefinitionsHash",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialState",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "prices",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "file",
+        "type": "string"
+      }
+    ],
+    "name": "setContractFile",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "ipfsFieldContainerHash",
+        "type": "string"
+      }
+    ],
+    "name": "setIpfsFieldContainerHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "uiFieldDefinitionsHash",
+        "type": "string"
+      }
+    ],
+    "name": "setUIFieldDefinitionsHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "fsmIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "toState",
+        "type": "bytes32"
+      }
+    ],
+    "name": "transitionState",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

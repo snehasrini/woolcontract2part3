@@ -1,0 +1,440 @@
+{
+  "address": "0x9a0F21c47162E25348B1cdf80B3965D26D62efb0",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "gatekeeper",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "Designated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "Discharged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "RoleRegistryCreated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "DESIGNATE_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ROLE_AWTA",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "designate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "discharge",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "gateKeeper",
+      "outputs": [
+        {
+          "internalType": "contract GateKeeper",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getByIndex",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "key",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "hasTheRole",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_key",
+          "type": "address"
+        }
+      ],
+      "name": "getByKey",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "key",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "hasTheRole",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getIndexLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "length",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRoleHolders",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "allRoleHolders",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "hasRole",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "hasTheRole",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "role",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x13dafe3c84373e450da86831abdc38127c76b1dd15c9e0b2e16bba5b8d5b6a47",
+  "receipt": {
+    "to": null,
+    "from": "0x30aeb7D1C26C28dbc057e3F86399a9E3CB40CdEe",
+    "contractAddress": "0x9a0F21c47162E25348B1cdf80B3965D26D62efb0",
+    "transactionIndex": 0,
+    "gasUsed": "579081",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000080000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000840000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xbbaa1d7d6846f5707147d7f5e4dd41e6476515dc72c1cda5628d7565ae562c5a",
+    "transactionHash": "0x13dafe3c84373e450da86831abdc38127c76b1dd15c9e0b2e16bba5b8d5b6a47",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 194217,
+        "transactionHash": "0x13dafe3c84373e450da86831abdc38127c76b1dd15c9e0b2e16bba5b8d5b6a47",
+        "address": "0x9a0F21c47162E25348B1cdf80B3965D26D62efb0",
+        "topics": [
+          "0xe1024fd8985d06ce8c9f997f972a1260bbbb007e7f7496825505aff3b18165e9"
+        ],
+        "data": "0x0000000000000000000000009a0f21c47162e25348b1cdf80b3965d26d62efb0",
+        "logIndex": 0,
+        "blockHash": "0xbbaa1d7d6846f5707147d7f5e4dd41e6476515dc72c1cda5628d7565ae562c5a"
+      }
+    ],
+    "blockNumber": 194217,
+    "cumulativeGasUsed": "579081",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x49a2b6A16714569Cbbc4b4D08b52b9271455d8A5"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "74d01ba1355a9027c08cc2506d370f73",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"gatekeeper\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"Designated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"Discharged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"RoleRegistryCreated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"DESIGNATE_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ROLE_AWTA\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"designate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"discharge\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"gateKeeper\",\"outputs\":[{\"internalType\":\"contract GateKeeper\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"getByIndex\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"key\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"hasTheRole\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_key\",\"type\":\"address\"}],\"name\":\"getByKey\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"key\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"hasTheRole\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getIndexLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"length\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getRoleHolders\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"allRoleHolders\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"hasRole\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"hasTheRole\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"role\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"designate(address)\":{\"details\":\"Gives the role managed by this role registry to `_address`. Access is limited by the ACL.\",\"params\":{\"_address\":\"The address to designate the role to.\"}},\"discharge(address)\":{\"details\":\"Removes the role from `_address`. Access is limited by the ACL.\",\"params\":{\"_address\":\"The address to discharge fromn the role.\"}},\"getByIndex(uint256)\":{\"details\":\"Returns the information for the key at index `_index`\",\"params\":{\"_index\":\"The index of the key in the key array\"},\"returns\":{\"key\":\"the information for the key on a certain index\"}},\"getByKey(address)\":{\"details\":\"Returns the information for the key `_key`\",\"params\":{\"_key\":\"The key to get the info for\"},\"returns\":{\"key\":\"the information for the key\"}},\"getIndexLength()\":{\"details\":\"Returns the length of the index array\",\"returns\":{\"length\":\"the amount of items in the index array\"}},\"getRoleHolders()\":{\"details\":\"Returns a list of all the holders of this role.\",\"returns\":{\"allRoleHolders\":\"array with all role holders' addresses\"}},\"hasRole(address)\":{\"details\":\"Checks if `_address` has given the role managed by this role registry\",\"params\":{\"_address\":\"The address to check for the role.\"},\"returns\":{\"hasTheRole\":\"A boolean that is True if the address has the role.\"}},\"role()\":{\"details\":\"Returns the role\",\"returns\":{\"_0\":\"A bytes32 role\"}}},\"title\":\"Lists all administrators\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"designate(address)\":{\"notice\":\"Gives the role to an address\"},\"discharge(address)\":{\"notice\":\"Removes the role from an address\"},\"getByIndex(uint256)\":{\"notice\":\"Returns the information for the key at a given index\"},\"getByKey(address)\":{\"notice\":\"Returns the information for the key\"},\"getIndexLength()\":{\"notice\":\"Returns the length of the index array\"},\"getRoleHolders()\":{\"notice\":\"Returns a list of all the holders of this role.\"},\"hasRole(address)\":{\"notice\":\"Checks if an address has this role\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/roles/AWTARoleRegistry.sol\":\"AWTARoleRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/_library/authentication/GateKeeper.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./interfaces/IRoleRegistry.sol\\\";\\n\\n/**\\n * @title Manages contract permissions\\n */\\ncontract GateKeeper {\\n  bytes32 public constant CREATE_PERMISSIONS_ROLE = bytes32(\\\"CREATE_PERMISSIONS_ROLE\\\");\\n  bytes32 public constant ADD_ROLEREGISTRY_ROLE = bytes32(\\\"ADD_ROLEREGISTRY_ROLE\\\");\\n  bytes32 public constant ADD_KNOWNROLE_ROLE = bytes32(\\\"ADD_KNOWNROLE_ROLE\\\");\\n\\n  event SetPermission(address indexed entity, address indexed contractAddress, bytes32 indexed role, bool allowed);\\n  event ChangePermissionManager(address indexed contractAddress, bytes32 indexed role, address indexed manager);\\n\\n  // whether a certain entity has a permission\\n  mapping(address => mapping(address => mapping(bytes32 => bool))) permissions;\\n  // who is the manager of a permission\\n  mapping(address => mapping(bytes32 => address)) permissionManager;\\n  // a mapping of roles to the address of their correspending role registry\\n  mapping(bytes32 => address) roleToRoleRegistry;\\n\\n  // a list of all RoleRegistries\\n  IRoleRegistry[] roleRegistries;\\n\\n  bytes32[] public knownRoles;\\n  mapping(bytes32 => bool) private knownRole;\\n\\n  modifier onlyPermissionManager(address _contract, bytes32 role) {\\n    require(msg.sender == getPermissionManager(_contract, role), \\\"Sender is not the permission manager\\\");\\n    _;\\n  }\\n\\n  modifier auth(bytes32 _role) {\\n    require(hasPermission(msg.sender, address(this), _role), \\\"Sender does not have the correct permissions\\\");\\n    _;\\n  }\\n\\n  modifier authMany(bytes32[] memory _roles) {\\n    bool hasRole = false;\\n    for (uint256 i = 0; i < _roles.length; i++) {\\n      if (hasPermission(msg.sender, address(this), _roles[i])) {\\n        hasRole = true;\\n        break;\\n      }\\n    }\\n    require(hasRole == true, \\\"Sender does not have the correct permissions\\\");\\n    _;\\n  }\\n\\n  modifier authWithCustomReason(bytes32 _role, string memory reason) {\\n    require(hasPermission(msg.sender, address(this), _role), reason);\\n    _;\\n  }\\n\\n  modifier authManyWithCustomReason(bytes32[] memory _roles, string memory reason) {\\n    bool hasRole = false;\\n    for (uint256 i = 0; i < _roles.length; i++) {\\n      if (hasPermission(msg.sender, address(this), _roles[i])) {\\n        hasRole = true;\\n        break;\\n      }\\n    }\\n    require(hasRole == true, reason);\\n    _;\\n  }\\n\\n  constructor() {\\n    _createPermission(msg.sender, address(this), CREATE_PERMISSIONS_ROLE, msg.sender);\\n    _createPermission(msg.sender, address(this), ADD_ROLEREGISTRY_ROLE, msg.sender);\\n  }\\n\\n  /**\\n   * @notice Adds an existing role registry to an internal collection.\\n   * @dev Adds an existing role registry to an internal collection. Access is limited by the ACL.\\n   * @param roleRegistry Address of the role registry to be included\\n   */\\n  function addRoleRegistry(address roleRegistry) external auth(ADD_ROLEREGISTRY_ROLE) {\\n    roleRegistries.push(IRoleRegistry(roleRegistry));\\n  }\\n\\n  /**\\n   * @notice Creates a permission that wasn't previously set.\\n   * @dev Create a new permission granting `_entity` the ability to perform actions of role `_role` on `_contract` (setting `_manager` as parent).\\n   * If a created permission is removed it is possible to reset it with createPermission. Access is limited by the ACL.\\n   * @param _entity Address of the whitelisted entity that will be able to perform the role, this can be a user or a role registry\\n   * @param _contract Address of the app in which the role will be allowed (requires app to depend on kernel for ACL)\\n   * @param _role Identifier for the group of actions allowed to perform\\n   * @param _manager Entity address that will be able to grant and revoke the permission further.\\n   */\\n  function createPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role,\\n    address _manager\\n  ) public auth(CREATE_PERMISSIONS_ROLE) {\\n    if (!knownRole[_role]) {\\n      knownRoles.push(_role);\\n      knownRole[_role] = true;\\n    }\\n\\n    _createPermission(_entity, _contract, _role, _manager);\\n  }\\n\\n  /**\\n   * @notice Grants a permission if allowed.\\n   * @dev Grants `_entity` the ability to perform actions of role `_role` on `_contract`.\\n   * This requires `msg.sender` to be the permission manager.\\n   * @param _entity Address of the whitelisted entity that will be able to perform the role\\n   * @param _contract Address of the app in which the role will be allowed (requires app to depend on kernel for ACL)\\n   * @param _role Identifier for the group of actions allowed to perform\\n   */\\n  function grantPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role\\n  ) public onlyPermissionManager(_contract, _role) {\\n    _setPermission(_entity, _contract, _role, true);\\n  }\\n\\n  /**\\n   * @notice Revokes permission if allowed.\\n   * @dev Revokes `_entity` the ability to perform actions of role `_role` on `_contract`.\\n   * This requires `msg.sender` to be the parent of the permission\\n   * @param _entity Address of the whitelisted entity that will be revoked access\\n   * @param _contract Address of the app in which the role is revoked\\n   * @param _role Identifier for the group of actions allowed to perform\\n   */\\n  function revokePermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role\\n  ) public onlyPermissionManager(_contract, _role) {\\n    _setPermission(_entity, _contract, _role, false);\\n  }\\n\\n  /**\\n   * @notice Sets the manager address of a permission on a contract\\n   * @dev Sets `_newManager` as the manager of the permission `_role` on `_contract`\\n   * This requires `msg.sender` to be the parent of the permission\\n   * @param _newManager Address for the new manager\\n   * @param _contract Address of the app in which the permission management is being transferred\\n   * @param _role Identifier for the group of actions allowed to perform\\n   */\\n  function setPermissionManager(\\n    address _newManager,\\n    address _contract,\\n    bytes32 _role\\n  ) public onlyPermissionManager(_contract, _role) {\\n    _setPermissionManager(_newManager, _contract, _role);\\n  }\\n\\n  /**\\n   * @notice Get manager address for a permission on a contract\\n   * @dev Get manager address for the permission `_role` on `_contract`\\n   * @param _contract Contract address\\n   * @param _role Role identifier\\n   * @return Address of the manager for the permission\\n   */\\n  function getPermissionManager(address _contract, bytes32 _role) public view returns (address) {\\n    return permissionManager[_contract][_role];\\n  }\\n\\n  /**\\n   * @notice Lists all the permissions of an entity on a contract address\\n   * @dev Lists all permissions for `_entity` on `_contract`\\n   * @param _entity Entity address\\n   * @param _contract Contract address\\n   * @return bytes32[] List of permissions\\n   */\\n  function permissionsOf(address _entity, address _contract) public view returns (bytes32[] memory) {\\n    uint8 counter = 0;\\n    bytes32[] memory tmp = new bytes32[](knownRoles.length);\\n    for (uint256 i = 0; i < knownRoles.length; i++) {\\n      if (hasPermission(_entity, _contract, knownRoles[i])) {\\n        tmp[counter] = knownRoles[i];\\n        counter += 1;\\n      }\\n    }\\n\\n    bytes32[] memory permissionsList = new bytes32[](counter);\\n    for (uint256 j = 0; j < counter; j++) {\\n      permissionsList[j] = tmp[j];\\n    }\\n\\n    return permissionsList;\\n  }\\n\\n  /**\\n   * @notice Checks ACL on kernel or permission status\\n   * @dev Checks if `_entity` has permission `_role` on `_contract`\\n   * @param _entity Entity address\\n   * @param _contract Contract address\\n   * @param _role Role identifier\\n   * @return Boolean indicating whether the ACL allows the role or not\\n   */\\n  function hasPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role\\n  ) public view returns (bool) {\\n    // the address passed in has the permissions themselves\\n    bool personalPermission = permissions[_entity][_contract][_role];\\n    if (personalPermission) {\\n      return personalPermission;\\n    }\\n    // or we will check if any of the role registries have the permission\\n    for (uint256 counter = 0; counter < roleRegistries.length; counter++) {\\n      address registry = address(roleRegistries[counter]);\\n      bool registryPermission = permissions[registry][_contract][_role];\\n      if (registryPermission) {\\n        if (roleRegistries[counter].hasRole(_entity)) {\\n          return true;\\n        }\\n      }\\n    }\\n    // if, not, deny!\\n    return false;\\n  }\\n\\n  /**\\n   * @notice Retrieves the role registry address for a given role\\n   * @dev Retrieves the role registry for the role `_role`\\n   * @param _role Identifier for the role mapped to a role registry\\n   * @return address of the role registry that corresponds to the role\\n   */\\n  function getRoleRegistryAddress(bytes32 _role) public view returns (address) {\\n    return roleToRoleRegistry[_role];\\n  }\\n\\n  /**\\n   * @notice Sets the role registry address for a given role\\n   * @dev Sets the role registry for the role `_role` to `_address`. Access is limited by the ACL.\\n   * @param _role Identifier for the role mapped to a role registry\\n   * @param _address address of the role registry to put into the store\\n   */\\n  function setRoleRegistryAddress(bytes32 _role, address _address)\\n    public\\n    authWithCustomReason(ADD_ROLEREGISTRY_ROLE, \\\"Sender needs ADD_ROLEREGISTRY_ROLE\\\")\\n  {\\n    roleToRoleRegistry[_role] = _address;\\n\\n    if (!knownRole[_role]) {\\n      knownRoles.push(_role);\\n      knownRole[_role] = true;\\n    }\\n  }\\n\\n  /**\\n   * @dev Internal createPermission for access inside the gatekeeper (on instantiation)\\n   */\\n  function _createPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role,\\n    address _manager\\n  ) internal {\\n    require(\\n      permissionManager[_contract][_role] == address(0x0),\\n      \\\"only allow permission creation when it has no manager (has not been created before)\\\"\\n    );\\n    _setPermission(_entity, _contract, _role, true);\\n    _setPermissionManager(_manager, _contract, _role);\\n  }\\n\\n  /**\\n   * @dev Internal function called to actually save the permission\\n   */\\n  function _setPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role,\\n    bool _allowed\\n  ) internal {\\n    permissions[_entity][_contract][_role] = _allowed;\\n    emit SetPermission(_entity, _contract, _role, _allowed);\\n  }\\n\\n  /**\\n   * @dev Internal function that sets management\\n   */\\n  function _setPermissionManager(\\n    address _newManager,\\n    address _contract,\\n    bytes32 _role\\n  ) internal {\\n    require(_newManager > address(0x0), \\\"_newManager should be a real address\\\");\\n\\n    permissionManager[_contract][_role] = _newManager;\\n    emit ChangePermissionManager(_contract, _role, _newManager);\\n  }\\n}\\n\",\"keccak256\":\"0x3e1d7e3c494b07a3e861395b965acd1651733c5b53c40bd51f0961707eb18e74\",\"license\":\"MIT\"},\"contracts/_library/authentication/RoleRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./interfaces/IRoleRegistry.sol\\\";\\nimport \\\"./Secured.sol\\\";\\nimport \\\"../utility/syncing/Syncable.sol\\\";\\n\\n/**\\n * @title Base contract for role registries\\n * @dev The RoleRegistry contract defines the methods and data structures to\\n * record if addresses have certain roles or not.\\n */\\ncontract RoleRegistry is IRoleRegistry, Syncable, Secured {\\n  bytes32 public constant DESIGNATE_ROLE = bytes32(\\\"DESIGNATE_ROLE\\\");\\n\\n  struct RoleHolderContainer {\\n    bool roleDesignated;\\n    uint256 creationDate;\\n  }\\n\\n  mapping(address => RoleHolderContainer) private roleHolders;\\n  address[] private roleHoldersIndex;\\n\\n  constructor(address _gateKeeper) Secured(_gateKeeper) {\\n    emit RoleRegistryCreated(address(this));\\n  }\\n\\n  /**\\n   * @notice Returns a list of all the holders of this role.\\n   * @dev Returns a list of all the holders of this role.\\n   * @return allRoleHolders array with all role holders' addresses\\n   */\\n  function getRoleHolders() public view returns (address[] memory allRoleHolders) {\\n    return roleHoldersIndex;\\n  }\\n\\n  /**\\n   * @notice Checks if an address has this role\\n   * @dev Checks if `_address` has given the role managed by this role registry\\n   * @param _address The address to check for the role.\\n   * @return hasTheRole A boolean that is True if the address has the role.\\n   */\\n  function hasRole(address _address) public view override returns (bool hasTheRole) {\\n    hasTheRole = roleHolders[_address].roleDesignated;\\n  }\\n\\n  /**\\n   * @notice Gives the role to an address\\n   * @dev Gives the role managed by this role registry to `_address`. Access is limited by the ACL.\\n   * @param _address The address to designate the role to.\\n   */\\n  function designate(address _address)\\n    public\\n    override\\n    authWithCustomReason(DESIGNATE_ROLE, \\\"Sender needs DESIGNATE_ROLE\\\")\\n  {\\n    if (roleHolders[_address].creationDate == 0) {\\n      roleHoldersIndex.push(_address);\\n      roleHolders[_address].creationDate = block.timestamp;\\n    }\\n    roleHolders[_address].roleDesignated = true;\\n    emit Designated(_address);\\n  }\\n\\n  /**\\n   * @notice Removes the role from an address\\n   * @dev Removes the role from `_address`. Access is limited by the ACL.\\n   * @param _address The address to discharge fromn the role.\\n   */\\n  function discharge(address _address)\\n    public\\n    override\\n    authWithCustomReason(DESIGNATE_ROLE, \\\"Sender needs DESIGNATE_ROLE\\\")\\n  {\\n    require(roleHolders[_address].creationDate > 0, \\\"This address was never designated to this role\\\");\\n\\n    uint256 i = 0;\\n    while (roleHoldersIndex[i] != _address) {\\n      i++;\\n    }\\n    for (uint256 j = i; j < roleHoldersIndex.length - 1; j++) {\\n      roleHoldersIndex[j] = roleHoldersIndex[j + 1];\\n    }\\n    roleHoldersIndex.pop();\\n\\n    roleHolders[_address].roleDesignated = false;\\n    emit Discharged(_address);\\n  }\\n\\n  /**\\n   * @notice Returns the length of the index array\\n   * @dev Returns the length of the index array\\n   * @return length the amount of items in the index array\\n   */\\n  function getIndexLength() public view override returns (uint256 length) {\\n    length = roleHoldersIndex.length;\\n  }\\n\\n  /**\\n   * @notice Returns the information for the key at a given index\\n   * @dev Returns the information for the key at index `_index`\\n   * @param _index The index of the key in the key array\\n   * @return key the information for the key on a certain index\\n   */\\n  function getByIndex(uint256 _index) public view returns (address key, bool hasTheRole) {\\n    key = roleHoldersIndex[_index];\\n    hasTheRole = roleHolders[roleHoldersIndex[_index]].roleDesignated;\\n  }\\n\\n  /**\\n   * @notice Returns the information for the key\\n   * @dev Returns the information for the key `_key`\\n   * @param _key The key to get the info for\\n   * @return key the information for the key\\n   */\\n  function getByKey(address _key) public view returns (address key, bool hasTheRole) {\\n    key = _key;\\n    hasTheRole = roleHolders[_key].roleDesignated;\\n  }\\n}\\n\",\"keccak256\":\"0x7ed3090fe788b5e6f2c2d9068011a31098424557428c90c0201696d237143b89\",\"license\":\"MIT\"},\"contracts/_library/authentication/Secured.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./GateKeeper.sol\\\";\\nimport \\\"../utility/conversions/Converter.sol\\\";\\n\\n/**\\n * @title Executes role-based permission checks\\n */\\ncontract Secured is Converter {\\n  GateKeeper public gateKeeper;\\n\\n  modifier auth(bytes32 _role) {\\n    require(canPerform(msg.sender, _role), \\\"Sender does not have the correct role\\\");\\n    _;\\n  }\\n\\n  modifier authMany(bytes32[] memory _roles) {\\n    bool hasRole = false;\\n    for (uint256 i = 0; i < _roles.length; i++) {\\n      if (canPerform(msg.sender, _roles[i])) {\\n        hasRole = true;\\n        break;\\n      }\\n    }\\n    require(hasRole == true, \\\"Sender does not have the correct role\\\");\\n    _;\\n  }\\n\\n  modifier authWithCustomReason(bytes32 _role, string memory reason) {\\n    require(canPerform(msg.sender, _role), reason);\\n    _;\\n  }\\n\\n  modifier authManyWithCustomReason(bytes32[] memory _roles, string memory reason) {\\n    bool hasRole = false;\\n    for (uint256 i = 0; i < _roles.length; i++) {\\n      if (canPerform(msg.sender, _roles[i])) {\\n        hasRole = true;\\n        break;\\n      }\\n    }\\n    require(hasRole == true, reason);\\n    _;\\n  }\\n\\n  constructor(address _gateKeeper) {\\n    gateKeeper = GateKeeper(_gateKeeper);\\n  }\\n\\n  /**\\n   * @notice Internal function to check if the address has the required role\\n   */\\n  function canPerform(address _sender, bytes32 _role) internal view returns (bool) {\\n    return address(gateKeeper) == address(0x0) || gateKeeper.hasPermission(_sender, address(this), _role);\\n  }\\n}\\n\",\"keccak256\":\"0x2a06506187bf8e569ca61ba9ab159878d4236e2191d00d41f4e830a43cc4108f\",\"license\":\"MIT\"},\"contracts/_library/authentication/interfaces/IRoleRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title RoleRegistry\\n * @dev The RoleRegistry contract defines the methods and data structures to\\n * record if addresses have certain roles or not.\\n */\\nabstract contract IRoleRegistry {\\n  event Designated(address _address);\\n  event Discharged(address _address);\\n  event RoleRegistryCreated(address _address);\\n\\n  /**\\n   * @dev Checks if an address has a certain role\\n   * @param _address The address to check for the role.\\n   * @return hasTheRole A boolean that is True if the address has the role.\\n   */\\n  function hasRole(address _address) public view virtual returns (bool hasTheRole);\\n\\n  /**\\n   * @dev Gives the role to an address\\n   * @param _address The address to designate the role to.\\n   */\\n  function designate(address _address) public virtual;\\n\\n  /**\\n   * @dev Removes the role from an address\\n   * @param _address The address to discharge fromn the role.\\n   */\\n  function discharge(address _address) public virtual;\\n}\\n\",\"keccak256\":\"0xed8900bb78ba684d922a9afc8d8bdf86575c6653a7a60eae7bbe06bccdb79285\",\"license\":\"MIT\"},\"contracts/_library/utility/conversions/Converter.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\ncontract Converter {\\n  function addressToString(address data) internal pure returns (string memory) {\\n    bytes memory s = new bytes(40);\\n    for (uint256 i = 0; i < 20; i++) {\\n      bytes1 b = bytes1(uint8(uint256(uint160(data)) / (2**(8 * (19 - i)))));\\n      bytes1 hi = bytes1(uint8(b) / 16);\\n      bytes1 lo = bytes1(uint8(b) - 16 * uint8(hi));\\n      s[2 * i] = char(hi);\\n      s[2 * i + 1] = char(lo);\\n    }\\n    return string(s);\\n  }\\n\\n  function char(bytes1 b) internal pure returns (bytes1 c) {\\n    if (uint8(b) < 10) {\\n      return bytes1(uint8(b) + 0x30);\\n    }\\n    return bytes1(uint8(b) + 0x57);\\n  }\\n\\n  function bytes32ToString(bytes32 x) internal pure returns (string memory) {\\n    bytes memory bytesString = new bytes(32);\\n    uint256 charCount = 0;\\n    for (uint256 j = 0; j < 32; j++) {\\n      bytes1 charr = bytes1(bytes32(uint256(x) * 2**(8 * j)));\\n      if (charr != 0) {\\n        bytesString[charCount] = charr;\\n        charCount++;\\n      }\\n    }\\n    bytes memory bytesStringTrimmed = new bytes(charCount);\\n    for (uint256 k = 0; k < charCount; k++) {\\n      bytesStringTrimmed[k] = bytesString[k];\\n    }\\n    return string(bytesStringTrimmed);\\n  }\\n\\n  function uintToString(uint256 i) internal pure returns (string memory) {\\n    unchecked {\\n      if (i == 0) {\\n        return \\\"0\\\";\\n      }\\n\\n      uint256 j = i;\\n      uint256 length;\\n      while (j != 0) {\\n        length++;\\n        j /= 10;\\n      }\\n\\n      uint256 ii = i;\\n      bytes memory bstr = new bytes(length);\\n      uint256 k = length - 1;\\n      while (ii != 0) {\\n        bstr[k--] = bytes1(uint8(48 + (ii % 10)));\\n        ii /= 10;\\n      }\\n\\n      return string(bstr);\\n    }\\n  }\\n}\\n\",\"keccak256\":\"0x7b4a1f950a299fd21d157843c75500f7c5e3722bfb957625c5df9438431d52c4\",\"license\":\"MIT\"},\"contracts/_library/utility/syncing/Syncable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title The listable item should also implement\\n */\\nabstract contract Syncable {\\n  function getIndexLength() public view virtual returns (uint256 length);\\n\\n  // Waiting for the time we can return structs from functions!\\n  // function getByIndex(uint index) constant public returns (address key, bool hasRole){\\n  // function getByKey(address _key) constant public returns (address key, bool hasRole){\\n\\n  // Since ABIEncoderV2 we can now return the entire registry as address list in one call\\n  // function getIndex() constant public returns (address[] index) {\\n\\n  // Since ABIEncoderV2 we can now return the entire registry as an array of structs in one call\\n  // function getContents() constant public returns (Struct[] memory items) {\\n}\\n\",\"keccak256\":\"0x6a47441ebbf54d1c1f572a494eedd01f1f894289168a457af32a4a64b355b545\",\"license\":\"MIT\"},\"contracts/roles/AWTARoleRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../_library/authentication/RoleRegistry.sol\\\";\\n\\n/**\\n * @title Lists all administrators\\n */\\ncontract AWTARoleRegistry is RoleRegistry {\\n  bytes32 public constant ROLE_AWTA = \\\"ROLE_AWTA\\\";\\n\\n  constructor(address gatekeeper) RoleRegistry(gatekeeper) {}\\n\\n  /**\\n   * @dev Returns the role\\n   * @return A bytes32 role\\n   */\\n  function role() public pure returns (bytes32) {\\n    return ROLE_AWTA;\\n  }\\n}\\n\",\"keccak256\":\"0x63666ff9b7bdee2faaf8ae4be2061c9829abd39b4684df87e3cbc4289f848c09\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516109d53803806109d583398101604081905261002f91610086565b600080546001600160a01b0319166001600160a01b03831617905560405130815281907fe1024fd8985d06ce8c9f997f972a1260bbbb007e7f7496825505aff3b18165e99060200160405180910390a150506100b6565b60006020828403121561009857600080fd5b81516001600160a01b03811681146100af57600080fd5b9392505050565b610910806100c56000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806345d61ded1161007157806345d61ded1461014557806349877038146101705780637ef09bca146101a157806390ee9ff9146101dd578063d09200a3146101f0578063e1ba7d011461020557600080fd5b80630231853a146100ae5780630a7519a3146100c357806310055c1d146100ee5780632d883a73146101005780634534169214610132575b600080fd5b6100c16100bc366004610748565b61020d565b005b6100db6d44455349474e4154455f524f4c4560901b81565b6040519081526020015b60405180910390f35b68524f4c455f4157544160b81b6100db565b61011361010e366004610771565b61047d565b604080516001600160a01b0390931683529015156020830152016100e5565b6100c1610140366004610748565b6104f4565b600054610158906001600160a01b031681565b6040516001600160a01b0390911681526020016100e5565b61011361017e366004610748565b6001600160a01b038116600090815260016020526040902054909160ff90911690565b6101cd6101af366004610748565b6001600160a01b031660009081526001602052604090205460ff1690565b60405190151581526020016100e5565b6100db68524f4c455f4157544160b81b81565b6101f8610641565b6040516100e5919061078a565b6002546100db565b6d44455349474e4154455f524f4c4560901b6040518060400160405280601b81526020017f53656e646572206e656564732044455349474e4154455f524f4c45000000000081525061025f33836106a3565b81906102875760405162461bcd60e51b815260040161027e91906107d7565b60405180910390fd5b506001600160a01b038316600090815260016020819052604090912001546103085760405162461bcd60e51b815260206004820152602e60248201527f54686973206164647265737320776173206e657665722064657369676e61746560448201526d6420746f207468697320726f6c6560901b606482015260840161027e565b60005b836001600160a01b0316600282815481106103285761032861082c565b6000918252602090912001546001600160a01b031614610354578061034c81610858565b91505061030b565b805b60025461036590600190610873565b8110156103f057600261037982600161088a565b815481106103895761038961082c565b600091825260209091200154600280546001600160a01b0390921691839081106103b5576103b561082c565b600091825260209091200180546001600160a01b0319166001600160a01b0392909216919091179055806103e881610858565b915050610356565b506002805480610402576104026108a2565b60008281526020808220600019908401810180546001600160a01b03191690559092019092556001600160a01b03861680835260018252604092839020805460ff1916905591519182527fa918a014a3cc4d384620aab101a9de9a018850704254ab6ce288864db9abd98b910160405180910390a150505050565b600080600283815481106104935761049361082c565b6000918252602082200154600280546001600160a01b03909216945060019291869081106104c3576104c361082c565b60009182526020808320909101546001600160a01b03168352820192909252604001902054919360ff909216925050565b6d44455349474e4154455f524f4c4560901b6040518060400160405280601b81526020017f53656e646572206e656564732044455349474e4154455f524f4c45000000000081525061054633836106a3565b81906105655760405162461bcd60e51b815260040161027e91906107d7565b506001600160a01b038316600090815260016020819052604090912001546105e4576002805460018082019092557f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0386169081179091556000908152602082905260409020429101555b6001600160a01b038316600081815260016020818152604092839020805460ff191690921790915590519182527f6a7971839356e91af1f994a516a95eac2d3583cb6ba16b104843fcc927d77dae910160405180910390a1505050565b6060600280548060200260200160405190810160405280929190818152602001828054801561069957602002820191906000526020600020905b81546001600160a01b0316815260019091019060200180831161067b575b5050505050905090565b600080546001600160a01b031615806107415750600054604051630dace25b60e31b81526001600160a01b0385811660048301523060248301526044820185905290911690636d6712d89060640160206040518083038186803b15801561070957600080fd5b505afa15801561071d573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061074191906108b8565b9392505050565b60006020828403121561075a57600080fd5b81356001600160a01b038116811461074157600080fd5b60006020828403121561078357600080fd5b5035919050565b6020808252825182820181905260009190848201906040850190845b818110156107cb5783516001600160a01b0316835292840192918401916001016107a6565b50909695505050505050565b600060208083528351808285015260005b81811015610804578581018301518582016040015282016107e8565b81811115610816576000604083870101525b50601f01601f1916929092016040019392505050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b600060001982141561086c5761086c610842565b5060010190565b60008282101561088557610885610842565b500390565b6000821982111561089d5761089d610842565b500190565b634e487b7160e01b600052603160045260246000fd5b6000602082840312156108ca57600080fd5b8151801515811461074157600080fdfea2646970667358221220aaa315bcac9f6e1adf8839dff86033b58bf2a38b01955db3bb5e621dde24324664736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100a95760003560e01c806345d61ded1161007157806345d61ded1461014557806349877038146101705780637ef09bca146101a157806390ee9ff9146101dd578063d09200a3146101f0578063e1ba7d011461020557600080fd5b80630231853a146100ae5780630a7519a3146100c357806310055c1d146100ee5780632d883a73146101005780634534169214610132575b600080fd5b6100c16100bc366004610748565b61020d565b005b6100db6d44455349474e4154455f524f4c4560901b81565b6040519081526020015b60405180910390f35b68524f4c455f4157544160b81b6100db565b61011361010e366004610771565b61047d565b604080516001600160a01b0390931683529015156020830152016100e5565b6100c1610140366004610748565b6104f4565b600054610158906001600160a01b031681565b6040516001600160a01b0390911681526020016100e5565b61011361017e366004610748565b6001600160a01b038116600090815260016020526040902054909160ff90911690565b6101cd6101af366004610748565b6001600160a01b031660009081526001602052604090205460ff1690565b60405190151581526020016100e5565b6100db68524f4c455f4157544160b81b81565b6101f8610641565b6040516100e5919061078a565b6002546100db565b6d44455349474e4154455f524f4c4560901b6040518060400160405280601b81526020017f53656e646572206e656564732044455349474e4154455f524f4c45000000000081525061025f33836106a3565b81906102875760405162461bcd60e51b815260040161027e91906107d7565b60405180910390fd5b506001600160a01b038316600090815260016020819052604090912001546103085760405162461bcd60e51b815260206004820152602e60248201527f54686973206164647265737320776173206e657665722064657369676e61746560448201526d6420746f207468697320726f6c6560901b606482015260840161027e565b60005b836001600160a01b0316600282815481106103285761032861082c565b6000918252602090912001546001600160a01b031614610354578061034c81610858565b91505061030b565b805b60025461036590600190610873565b8110156103f057600261037982600161088a565b815481106103895761038961082c565b600091825260209091200154600280546001600160a01b0390921691839081106103b5576103b561082c565b600091825260209091200180546001600160a01b0319166001600160a01b0392909216919091179055806103e881610858565b915050610356565b506002805480610402576104026108a2565b60008281526020808220600019908401810180546001600160a01b03191690559092019092556001600160a01b03861680835260018252604092839020805460ff1916905591519182527fa918a014a3cc4d384620aab101a9de9a018850704254ab6ce288864db9abd98b910160405180910390a150505050565b600080600283815481106104935761049361082c565b6000918252602082200154600280546001600160a01b03909216945060019291869081106104c3576104c361082c565b60009182526020808320909101546001600160a01b03168352820192909252604001902054919360ff909216925050565b6d44455349474e4154455f524f4c4560901b6040518060400160405280601b81526020017f53656e646572206e656564732044455349474e4154455f524f4c45000000000081525061054633836106a3565b81906105655760405162461bcd60e51b815260040161027e91906107d7565b506001600160a01b038316600090815260016020819052604090912001546105e4576002805460018082019092557f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0386169081179091556000908152602082905260409020429101555b6001600160a01b038316600081815260016020818152604092839020805460ff191690921790915590519182527f6a7971839356e91af1f994a516a95eac2d3583cb6ba16b104843fcc927d77dae910160405180910390a1505050565b6060600280548060200260200160405190810160405280929190818152602001828054801561069957602002820191906000526020600020905b81546001600160a01b0316815260019091019060200180831161067b575b5050505050905090565b600080546001600160a01b031615806107415750600054604051630dace25b60e31b81526001600160a01b0385811660048301523060248301526044820185905290911690636d6712d89060640160206040518083038186803b15801561070957600080fd5b505afa15801561071d573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061074191906108b8565b9392505050565b60006020828403121561075a57600080fd5b81356001600160a01b038116811461074157600080fd5b60006020828403121561078357600080fd5b5035919050565b6020808252825182820181905260009190848201906040850190845b818110156107cb5783516001600160a01b0316835292840192918401916001016107a6565b50909695505050505050565b600060208083528351808285015260005b81811015610804578581018301518582016040015282016107e8565b81811115610816576000604083870101525b50601f01601f1916929092016040019392505050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b600060001982141561086c5761086c610842565b5060010190565b60008282101561088557610885610842565b500390565b6000821982111561089d5761089d610842565b500190565b634e487b7160e01b600052603160045260246000fd5b6000602082840312156108ca57600080fd5b8151801515811461074157600080fdfea2646970667358221220aaa315bcac9f6e1adf8839dff86033b58bf2a38b01955db3bb5e621dde24324664736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "designate(address)": {
+        "details": "Gives the role managed by this role registry to `_address`. Access is limited by the ACL.",
+        "params": {
+          "_address": "The address to designate the role to."
+        }
+      },
+      "discharge(address)": {
+        "details": "Removes the role from `_address`. Access is limited by the ACL.",
+        "params": {
+          "_address": "The address to discharge fromn the role."
+        }
+      },
+      "getByIndex(uint256)": {
+        "details": "Returns the information for the key at index `_index`",
+        "params": {
+          "_index": "The index of the key in the key array"
+        },
+        "returns": {
+          "key": "the information for the key on a certain index"
+        }
+      },
+      "getByKey(address)": {
+        "details": "Returns the information for the key `_key`",
+        "params": {
+          "_key": "The key to get the info for"
+        },
+        "returns": {
+          "key": "the information for the key"
+        }
+      },
+      "getIndexLength()": {
+        "details": "Returns the length of the index array",
+        "returns": {
+          "length": "the amount of items in the index array"
+        }
+      },
+      "getRoleHolders()": {
+        "details": "Returns a list of all the holders of this role.",
+        "returns": {
+          "allRoleHolders": "array with all role holders' addresses"
+        }
+      },
+      "hasRole(address)": {
+        "details": "Checks if `_address` has given the role managed by this role registry",
+        "params": {
+          "_address": "The address to check for the role."
+        },
+        "returns": {
+          "hasTheRole": "A boolean that is True if the address has the role."
+        }
+      },
+      "role()": {
+        "details": "Returns the role",
+        "returns": {
+          "_0": "A bytes32 role"
+        }
+      }
+    },
+    "title": "Lists all administrators",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "designate(address)": {
+        "notice": "Gives the role to an address"
+      },
+      "discharge(address)": {
+        "notice": "Removes the role from an address"
+      },
+      "getByIndex(uint256)": {
+        "notice": "Returns the information for the key at a given index"
+      },
+      "getByKey(address)": {
+        "notice": "Returns the information for the key"
+      },
+      "getIndexLength()": {
+        "notice": "Returns the length of the index array"
+      },
+      "getRoleHolders()": {
+        "notice": "Returns a list of all the holders of this role."
+      },
+      "hasRole(address)": {
+        "notice": "Checks if an address has this role"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 2246,
+        "contract": "contracts/roles/AWTARoleRegistry.sol:AWTARoleRegistry",
+        "label": "gateKeeper",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(GateKeeper)1978"
+      },
+      {
+        "astId": 2006,
+        "contract": "contracts/roles/AWTARoleRegistry.sol:AWTARoleRegistry",
+        "label": "roleHolders",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_struct(RoleHolderContainer)2001_storage)"
+      },
+      {
+        "astId": 2009,
+        "contract": "contracts/roles/AWTARoleRegistry.sol:AWTARoleRegistry",
+        "label": "roleHoldersIndex",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(GateKeeper)1978": {
+        "encoding": "inplace",
+        "label": "contract GateKeeper",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_struct(RoleHolderContainer)2001_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct RoleRegistry.RoleHolderContainer)",
+        "numberOfBytes": "32",
+        "value": "t_struct(RoleHolderContainer)2001_storage"
+      },
+      "t_struct(RoleHolderContainer)2001_storage": {
+        "encoding": "inplace",
+        "label": "struct RoleRegistry.RoleHolderContainer",
+        "members": [
+          {
+            "astId": 1998,
+            "contract": "contracts/roles/AWTARoleRegistry.sol:AWTARoleRegistry",
+            "label": "roleDesignated",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 2000,
+            "contract": "contracts/roles/AWTARoleRegistry.sol:AWTARoleRegistry",
+            "label": "creationDate",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

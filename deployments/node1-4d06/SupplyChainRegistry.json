@@ -1,0 +1,263 @@
+{
+  "address": "0xEBffD3345dF75cd720306a3d49313F9372e845E8",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "gateKeeper",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "statemachine",
+          "type": "address"
+        }
+      ],
+      "name": "StateMachineRegistered",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "INSERT_STATEMACHINE_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "gateKeeper",
+      "outputs": [
+        {
+          "internalType": "contract GateKeeper",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getByIndex",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "key",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "contractAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "someKey",
+          "type": "address"
+        }
+      ],
+      "name": "getByKey",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "key",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "contractAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getIndex",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "index",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getIndexLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "length",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "statemachine",
+          "type": "address"
+        }
+      ],
+      "name": "insert",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x487c03a8df7a1a01ea18c90a0ff517627f822e58510afeb2c165430a7262d7d2",
+  "receipt": {
+    "to": null,
+    "from": "0x30aeb7D1C26C28dbc057e3F86399a9E3CB40CdEe",
+    "contractAddress": "0xEBffD3345dF75cd720306a3d49313F9372e845E8",
+    "transactionIndex": 0,
+    "gasUsed": "370085",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xc8a7f01fcca783d6af9e75fae0b5a5cc57310c8c371687a443809957132ab0f1",
+    "transactionHash": "0x487c03a8df7a1a01ea18c90a0ff517627f822e58510afeb2c165430a7262d7d2",
+    "logs": [],
+    "blockNumber": 194244,
+    "cumulativeGasUsed": "370085",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x49a2b6A16714569Cbbc4b4D08b52b9271455d8A5"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "74d01ba1355a9027c08cc2506d370f73",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"gateKeeper\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"statemachine\",\"type\":\"address\"}],\"name\":\"StateMachineRegistered\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"INSERT_STATEMACHINE_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"gateKeeper\",\"outputs\":[{\"internalType\":\"contract GateKeeper\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getByIndex\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"key\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"someKey\",\"type\":\"address\"}],\"name\":\"getByKey\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"key\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getIndex\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"index\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getIndexLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"length\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"statemachine\",\"type\":\"address\"}],\"name\":\"insert\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getIndex()\":{\"returns\":{\"index\":\"an array with the addresses of all statemachines\"}},\"getIndexLength()\":{\"details\":\"Returns the length of the state machine index\",\"returns\":{\"length\":\"the amount of items in the state machine index\"}},\"insert(address)\":{\"details\":\"Emits the StateMachineRegistered event after the state machine has been included to the registry\",\"params\":{\"statemachine\":\"the state machine's address\"}}},\"title\":\"Registry contract for supplychain state machines\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getIndex()\":{\"notice\":\"Retrieves the state machine index\"},\"getIndexLength()\":{\"notice\":\"Returns the length of the state machine index\"},\"insert(address)\":{\"notice\":\"Inserts a statemachine into the registry\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/supplychain/SupplyChainRegistry.sol\":\"SupplyChainRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/_library/authentication/GateKeeper.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./interfaces/IRoleRegistry.sol\\\";\\n\\n/**\\n * @title Manages contract permissions\\n */\\ncontract GateKeeper {\\n  bytes32 public constant CREATE_PERMISSIONS_ROLE = bytes32(\\\"CREATE_PERMISSIONS_ROLE\\\");\\n  bytes32 public constant ADD_ROLEREGISTRY_ROLE = bytes32(\\\"ADD_ROLEREGISTRY_ROLE\\\");\\n  bytes32 public constant ADD_KNOWNROLE_ROLE = bytes32(\\\"ADD_KNOWNROLE_ROLE\\\");\\n\\n  event SetPermission(address indexed entity, address indexed contractAddress, bytes32 indexed role, bool allowed);\\n  event ChangePermissionManager(address indexed contractAddress, bytes32 indexed role, address indexed manager);\\n\\n  // whether a certain entity has a permission\\n  mapping(address => mapping(address => mapping(bytes32 => bool))) permissions;\\n  // who is the manager of a permission\\n  mapping(address => mapping(bytes32 => address)) permissionManager;\\n  // a mapping of roles to the address of their correspending role registry\\n  mapping(bytes32 => address) roleToRoleRegistry;\\n\\n  // a list of all RoleRegistries\\n  IRoleRegistry[] roleRegistries;\\n\\n  bytes32[] public knownRoles;\\n  mapping(bytes32 => bool) private knownRole;\\n\\n  modifier onlyPermissionManager(address _contract, bytes32 role) {\\n    require(msg.sender == getPermissionManager(_contract, role), \\\"Sender is not the permission manager\\\");\\n    _;\\n  }\\n\\n  modifier auth(bytes32 _role) {\\n    require(hasPermission(msg.sender, address(this), _role), \\\"Sender does not have the correct permissions\\\");\\n    _;\\n  }\\n\\n  modifier authMany(bytes32[] memory _roles) {\\n    bool hasRole = false;\\n    for (uint256 i = 0; i < _roles.length; i++) {\\n      if (hasPermission(msg.sender, address(this), _roles[i])) {\\n        hasRole = true;\\n        break;\\n      }\\n    }\\n    require(hasRole == true, \\\"Sender does not have the correct permissions\\\");\\n    _;\\n  }\\n\\n  modifier authWithCustomReason(bytes32 _role, string memory reason) {\\n    require(hasPermission(msg.sender, address(this), _role), reason);\\n    _;\\n  }\\n\\n  modifier authManyWithCustomReason(bytes32[] memory _roles, string memory reason) {\\n    bool hasRole = false;\\n    for (uint256 i = 0; i < _roles.length; i++) {\\n      if (hasPermission(msg.sender, address(this), _roles[i])) {\\n        hasRole = true;\\n        break;\\n      }\\n    }\\n    require(hasRole == true, reason);\\n    _;\\n  }\\n\\n  constructor() {\\n    _createPermission(msg.sender, address(this), CREATE_PERMISSIONS_ROLE, msg.sender);\\n    _createPermission(msg.sender, address(this), ADD_ROLEREGISTRY_ROLE, msg.sender);\\n  }\\n\\n  /**\\n   * @notice Adds an existing role registry to an internal collection.\\n   * @dev Adds an existing role registry to an internal collection. Access is limited by the ACL.\\n   * @param roleRegistry Address of the role registry to be included\\n   */\\n  function addRoleRegistry(address roleRegistry) external auth(ADD_ROLEREGISTRY_ROLE) {\\n    roleRegistries.push(IRoleRegistry(roleRegistry));\\n  }\\n\\n  /**\\n   * @notice Creates a permission that wasn't previously set.\\n   * @dev Create a new permission granting `_entity` the ability to perform actions of role `_role` on `_contract` (setting `_manager` as parent).\\n   * If a created permission is removed it is possible to reset it with createPermission. Access is limited by the ACL.\\n   * @param _entity Address of the whitelisted entity that will be able to perform the role, this can be a user or a role registry\\n   * @param _contract Address of the app in which the role will be allowed (requires app to depend on kernel for ACL)\\n   * @param _role Identifier for the group of actions allowed to perform\\n   * @param _manager Entity address that will be able to grant and revoke the permission further.\\n   */\\n  function createPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role,\\n    address _manager\\n  ) public auth(CREATE_PERMISSIONS_ROLE) {\\n    if (!knownRole[_role]) {\\n      knownRoles.push(_role);\\n      knownRole[_role] = true;\\n    }\\n\\n    _createPermission(_entity, _contract, _role, _manager);\\n  }\\n\\n  /**\\n   * @notice Grants a permission if allowed.\\n   * @dev Grants `_entity` the ability to perform actions of role `_role` on `_contract`.\\n   * This requires `msg.sender` to be the permission manager.\\n   * @param _entity Address of the whitelisted entity that will be able to perform the role\\n   * @param _contract Address of the app in which the role will be allowed (requires app to depend on kernel for ACL)\\n   * @param _role Identifier for the group of actions allowed to perform\\n   */\\n  function grantPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role\\n  ) public onlyPermissionManager(_contract, _role) {\\n    _setPermission(_entity, _contract, _role, true);\\n  }\\n\\n  /**\\n   * @notice Revokes permission if allowed.\\n   * @dev Revokes `_entity` the ability to perform actions of role `_role` on `_contract`.\\n   * This requires `msg.sender` to be the parent of the permission\\n   * @param _entity Address of the whitelisted entity that will be revoked access\\n   * @param _contract Address of the app in which the role is revoked\\n   * @param _role Identifier for the group of actions allowed to perform\\n   */\\n  function revokePermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role\\n  ) public onlyPermissionManager(_contract, _role) {\\n    _setPermission(_entity, _contract, _role, false);\\n  }\\n\\n  /**\\n   * @notice Sets the manager address of a permission on a contract\\n   * @dev Sets `_newManager` as the manager of the permission `_role` on `_contract`\\n   * This requires `msg.sender` to be the parent of the permission\\n   * @param _newManager Address for the new manager\\n   * @param _contract Address of the app in which the permission management is being transferred\\n   * @param _role Identifier for the group of actions allowed to perform\\n   */\\n  function setPermissionManager(\\n    address _newManager,\\n    address _contract,\\n    bytes32 _role\\n  ) public onlyPermissionManager(_contract, _role) {\\n    _setPermissionManager(_newManager, _contract, _role);\\n  }\\n\\n  /**\\n   * @notice Get manager address for a permission on a contract\\n   * @dev Get manager address for the permission `_role` on `_contract`\\n   * @param _contract Contract address\\n   * @param _role Role identifier\\n   * @return Address of the manager for the permission\\n   */\\n  function getPermissionManager(address _contract, bytes32 _role) public view returns (address) {\\n    return permissionManager[_contract][_role];\\n  }\\n\\n  /**\\n   * @notice Lists all the permissions of an entity on a contract address\\n   * @dev Lists all permissions for `_entity` on `_contract`\\n   * @param _entity Entity address\\n   * @param _contract Contract address\\n   * @return bytes32[] List of permissions\\n   */\\n  function permissionsOf(address _entity, address _contract) public view returns (bytes32[] memory) {\\n    uint8 counter = 0;\\n    bytes32[] memory tmp = new bytes32[](knownRoles.length);\\n    for (uint256 i = 0; i < knownRoles.length; i++) {\\n      if (hasPermission(_entity, _contract, knownRoles[i])) {\\n        tmp[counter] = knownRoles[i];\\n        counter += 1;\\n      }\\n    }\\n\\n    bytes32[] memory permissionsList = new bytes32[](counter);\\n    for (uint256 j = 0; j < counter; j++) {\\n      permissionsList[j] = tmp[j];\\n    }\\n\\n    return permissionsList;\\n  }\\n\\n  /**\\n   * @notice Checks ACL on kernel or permission status\\n   * @dev Checks if `_entity` has permission `_role` on `_contract`\\n   * @param _entity Entity address\\n   * @param _contract Contract address\\n   * @param _role Role identifier\\n   * @return Boolean indicating whether the ACL allows the role or not\\n   */\\n  function hasPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role\\n  ) public view returns (bool) {\\n    // the address passed in has the permissions themselves\\n    bool personalPermission = permissions[_entity][_contract][_role];\\n    if (personalPermission) {\\n      return personalPermission;\\n    }\\n    // or we will check if any of the role registries have the permission\\n    for (uint256 counter = 0; counter < roleRegistries.length; counter++) {\\n      address registry = address(roleRegistries[counter]);\\n      bool registryPermission = permissions[registry][_contract][_role];\\n      if (registryPermission) {\\n        if (roleRegistries[counter].hasRole(_entity)) {\\n          return true;\\n        }\\n      }\\n    }\\n    // if, not, deny!\\n    return false;\\n  }\\n\\n  /**\\n   * @notice Retrieves the role registry address for a given role\\n   * @dev Retrieves the role registry for the role `_role`\\n   * @param _role Identifier for the role mapped to a role registry\\n   * @return address of the role registry that corresponds to the role\\n   */\\n  function getRoleRegistryAddress(bytes32 _role) public view returns (address) {\\n    return roleToRoleRegistry[_role];\\n  }\\n\\n  /**\\n   * @notice Sets the role registry address for a given role\\n   * @dev Sets the role registry for the role `_role` to `_address`. Access is limited by the ACL.\\n   * @param _role Identifier for the role mapped to a role registry\\n   * @param _address address of the role registry to put into the store\\n   */\\n  function setRoleRegistryAddress(bytes32 _role, address _address)\\n    public\\n    authWithCustomReason(ADD_ROLEREGISTRY_ROLE, \\\"Sender needs ADD_ROLEREGISTRY_ROLE\\\")\\n  {\\n    roleToRoleRegistry[_role] = _address;\\n\\n    if (!knownRole[_role]) {\\n      knownRoles.push(_role);\\n      knownRole[_role] = true;\\n    }\\n  }\\n\\n  /**\\n   * @dev Internal createPermission for access inside the gatekeeper (on instantiation)\\n   */\\n  function _createPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role,\\n    address _manager\\n  ) internal {\\n    require(\\n      permissionManager[_contract][_role] == address(0x0),\\n      \\\"only allow permission creation when it has no manager (has not been created before)\\\"\\n    );\\n    _setPermission(_entity, _contract, _role, true);\\n    _setPermissionManager(_manager, _contract, _role);\\n  }\\n\\n  /**\\n   * @dev Internal function called to actually save the permission\\n   */\\n  function _setPermission(\\n    address _entity,\\n    address _contract,\\n    bytes32 _role,\\n    bool _allowed\\n  ) internal {\\n    permissions[_entity][_contract][_role] = _allowed;\\n    emit SetPermission(_entity, _contract, _role, _allowed);\\n  }\\n\\n  /**\\n   * @dev Internal function that sets management\\n   */\\n  function _setPermissionManager(\\n    address _newManager,\\n    address _contract,\\n    bytes32 _role\\n  ) internal {\\n    require(_newManager > address(0x0), \\\"_newManager should be a real address\\\");\\n\\n    permissionManager[_contract][_role] = _newManager;\\n    emit ChangePermissionManager(_contract, _role, _newManager);\\n  }\\n}\\n\",\"keccak256\":\"0x3e1d7e3c494b07a3e861395b965acd1651733c5b53c40bd51f0961707eb18e74\",\"license\":\"MIT\"},\"contracts/_library/authentication/Secured.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./GateKeeper.sol\\\";\\nimport \\\"../utility/conversions/Converter.sol\\\";\\n\\n/**\\n * @title Executes role-based permission checks\\n */\\ncontract Secured is Converter {\\n  GateKeeper public gateKeeper;\\n\\n  modifier auth(bytes32 _role) {\\n    require(canPerform(msg.sender, _role), \\\"Sender does not have the correct role\\\");\\n    _;\\n  }\\n\\n  modifier authMany(bytes32[] memory _roles) {\\n    bool hasRole = false;\\n    for (uint256 i = 0; i < _roles.length; i++) {\\n      if (canPerform(msg.sender, _roles[i])) {\\n        hasRole = true;\\n        break;\\n      }\\n    }\\n    require(hasRole == true, \\\"Sender does not have the correct role\\\");\\n    _;\\n  }\\n\\n  modifier authWithCustomReason(bytes32 _role, string memory reason) {\\n    require(canPerform(msg.sender, _role), reason);\\n    _;\\n  }\\n\\n  modifier authManyWithCustomReason(bytes32[] memory _roles, string memory reason) {\\n    bool hasRole = false;\\n    for (uint256 i = 0; i < _roles.length; i++) {\\n      if (canPerform(msg.sender, _roles[i])) {\\n        hasRole = true;\\n        break;\\n      }\\n    }\\n    require(hasRole == true, reason);\\n    _;\\n  }\\n\\n  constructor(address _gateKeeper) {\\n    gateKeeper = GateKeeper(_gateKeeper);\\n  }\\n\\n  /**\\n   * @notice Internal function to check if the address has the required role\\n   */\\n  function canPerform(address _sender, bytes32 _role) internal view returns (bool) {\\n    return address(gateKeeper) == address(0x0) || gateKeeper.hasPermission(_sender, address(this), _role);\\n  }\\n}\\n\",\"keccak256\":\"0x2a06506187bf8e569ca61ba9ab159878d4236e2191d00d41f4e830a43cc4108f\",\"license\":\"MIT\"},\"contracts/_library/authentication/interfaces/IRoleRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title RoleRegistry\\n * @dev The RoleRegistry contract defines the methods and data structures to\\n * record if addresses have certain roles or not.\\n */\\nabstract contract IRoleRegistry {\\n  event Designated(address _address);\\n  event Discharged(address _address);\\n  event RoleRegistryCreated(address _address);\\n\\n  /**\\n   * @dev Checks if an address has a certain role\\n   * @param _address The address to check for the role.\\n   * @return hasTheRole A boolean that is True if the address has the role.\\n   */\\n  function hasRole(address _address) public view virtual returns (bool hasTheRole);\\n\\n  /**\\n   * @dev Gives the role to an address\\n   * @param _address The address to designate the role to.\\n   */\\n  function designate(address _address) public virtual;\\n\\n  /**\\n   * @dev Removes the role from an address\\n   * @param _address The address to discharge fromn the role.\\n   */\\n  function discharge(address _address) public virtual;\\n}\\n\",\"keccak256\":\"0xed8900bb78ba684d922a9afc8d8bdf86575c6653a7a60eae7bbe06bccdb79285\",\"license\":\"MIT\"},\"contracts/_library/provenance/statemachine/StateMachine.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contcontact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../authentication/Secured.sol\\\";\\n\\n/**\\n * @title Base contract for state machines\\n */\\nabstract contract StateMachine is Secured {\\n  event Transition(address sender, bytes32 fromState, bytes32 toState);\\n\\n  struct State {\\n    // a boolean to check if the state is actually created\\n    bool hasBeenCreated;\\n    // a mapping of functions that can be executed when in this state\\n    mapping(bytes4 => bool) allowedFunctions;\\n    // a list of all the roles that have been configured for this state\\n    bytes32[] allowedRoles;\\n    // a list of all the preconditions that have been configured for this state\\n    function(bytes32, bytes32) internal view[] preConditions;\\n    // a list of callbacks to execute before the state transition completes\\n    function(bytes32, bytes32) internal[] callbacks;\\n    // a list of states that can be transitioned to\\n    bytes32[] nextStates;\\n    // function that executes logic and then does a StateTransition\\n    bytes4 preFunction;\\n  }\\n\\n  struct StateTransition {\\n    bytes32 fromState;\\n    bytes32 toState;\\n    address actor;\\n    uint256 timestamp;\\n  }\\n\\n  StateTransition[] public history;\\n\\n  mapping(bytes32 => State) internal states;\\n  bytes32[] internal possibleStates;\\n  bytes32 internal currentState;\\n\\n  // a list of selectors that might be allowed functions\\n  bytes4[] internal knownSelectors;\\n  mapping(bytes4 => bool) internal knownSelector;\\n\\n  /**\\n   * @notice Modifier to ensure the statemachine was setup\\n   */\\n  modifier checkStateMachineSetup() {\\n    require(possibleStates.length > 0, \\\"this statemachine has not been setup yet\\\");\\n    _;\\n  }\\n\\n  /**\\n   * @notice Modifier to secure functions for a specific state\\n   */\\n  modifier checkAllowedFunction() {\\n    require(states[currentState].allowedFunctions[msg.sig], \\\"this function is not allowed in this state\\\");\\n    _;\\n  }\\n\\n  /**\\n   * @notice Modifier that checks if we can trigger a transition between the current state and the next state\\n   */\\n  modifier checkTransitionCriteria(bytes32 toState) {\\n    checkAllTransitionCriteria(getCurrentState(), toState);\\n    _;\\n  }\\n\\n  modifier doesStateExist(bytes32 state) {\\n    require(states[state].hasBeenCreated, \\\"the state has not been created yet\\\");\\n    _;\\n  }\\n\\n  /**\\n   * @notice Returns the length of the history\\n   */\\n  function getHistoryLength() public view returns (uint256) {\\n    return history.length;\\n  }\\n\\n  /**\\n   * @notice Returns history as tuple for given index.\\n   * @dev Requires the index to be within the bounds of the history array\\n   */\\n  function getHistory(uint256 index)\\n    public\\n    view\\n    returns (\\n      bytes32 fromState,\\n      bytes32 toState,\\n      address actor,\\n      uint256 timestamp\\n    )\\n  {\\n    require(index >= 0 && index < history.length, \\\"Index out of bounds\\\");\\n    return (history[index].fromState, history[index].toState, history[index].actor, history[index].timestamp);\\n  }\\n\\n  /**\\n   * @notice Returns the name of the current state of this object.\\n   * @dev Requires the current state to be configured before calling this function\\n   */\\n  function getCurrentState() public view returns (bytes32 state) {\\n    require(states[currentState].hasBeenCreated, \\\"the initial state has not been created yet\\\");\\n    return currentState;\\n  }\\n\\n  /**\\n   * @notice Returns a list of all the possible states of this object.\\n   */\\n  function getAllStates() public view returns (bytes32[] memory allStates) {\\n    return possibleStates;\\n  }\\n\\n  /**\\n   * @notice Returns a list of all the possible next states of the current state.\\n   */\\n  function getNextStates() public view returns (bytes32[] memory nextStates) {\\n    return states[currentState].nextStates;\\n  }\\n\\n  /**\\n   * @notice Returns state as tuple for give state.\\n   */\\n  function getState(bytes32 state)\\n    public\\n    view\\n    returns (\\n      bytes32 name,\\n      bytes32[] memory nextStates,\\n      bytes32[] memory allowedRoles,\\n      bytes4[] memory allowedFunctions,\\n      bytes4 preFunction\\n    )\\n  {\\n    State storage s = states[state]; // copy to memory\\n\\n    uint8 counter = 0;\\n    bytes4[] memory tmp = new bytes4[](knownSelectors.length);\\n    for (uint256 i = 0; i < knownSelectors.length; i++) {\\n      if (states[state].allowedFunctions[knownSelectors[i]]) {\\n        tmp[counter] = knownSelectors[i];\\n        counter += 1;\\n      }\\n    }\\n\\n    bytes4[] memory selectors = new bytes4[](counter);\\n    for (uint256 j = 0; j < counter; j++) {\\n      selectors[j] = tmp[j];\\n    }\\n\\n    return (state, s.nextStates, s.allowedRoles, selectors, s.preFunction);\\n  }\\n\\n  /**\\n   * @notice Transitions the state and executes all callbacks.\\n   * @dev Emits a Transition event after a successful transition.\\n   */\\n  function transitionState(bytes32 toState) public checkStateMachineSetup checkTransitionCriteria(toState) {\\n    bytes32 oldState = currentState;\\n    currentState = toState;\\n\\n    function(bytes32, bytes32) internal[] storage callbacks = states[toState].callbacks;\\n    for (uint256 i = 0; i < callbacks.length; i++) {\\n      callbacks[i](oldState, toState);\\n    }\\n\\n    history.push(\\n      StateTransition({fromState: oldState, toState: toState, actor: msg.sender, timestamp: block.timestamp})\\n    );\\n\\n    emit Transition(msg.sender, oldState, currentState);\\n  }\\n\\n  /**\\n   * @dev Abstract function to setup te state machine configuration\\n   */\\n  function setupStateMachine() internal virtual;\\n\\n  function createState(bytes32 stateName) internal {\\n    require(!states[stateName].hasBeenCreated, \\\"this state has already been created\\\");\\n    states[stateName].hasBeenCreated = true;\\n    possibleStates.push(stateName);\\n  }\\n\\n  function addRoleForState(bytes32 state, bytes32 role) internal doesStateExist(state) {\\n    states[state].allowedRoles.push(role);\\n  }\\n\\n  function addAllowedFunctionForState(bytes32 state, bytes4 allowedFunction) internal doesStateExist(state) {\\n    if (!knownSelector[allowedFunction]) {\\n      knownSelector[allowedFunction] = true;\\n      knownSelectors.push(allowedFunction);\\n    }\\n    states[state].allowedFunctions[allowedFunction] = true;\\n  }\\n\\n  function addNextStateForState(bytes32 state, bytes32 nextState)\\n    internal\\n    doesStateExist(state)\\n    doesStateExist(nextState)\\n  {\\n    states[state].nextStates.push(nextState);\\n  }\\n\\n  function addCallbackForState(bytes32 state, function(bytes32, bytes32) internal callback)\\n    internal\\n    doesStateExist(state)\\n  {\\n    states[state].callbacks.push(callback);\\n  }\\n\\n  function addPreConditionForState(bytes32 state, function(bytes32, bytes32) internal view preCondition)\\n    internal\\n    doesStateExist(state)\\n  {\\n    states[state].preConditions.push(preCondition);\\n  }\\n\\n  function setPreFunctionForState(bytes32 state, bytes4 functionSig) internal doesStateExist(state) {\\n    states[state].preFunction = functionSig;\\n  }\\n\\n  /**\\n   * @notice Configures the initial state of an object\\n   */\\n  function setInitialState(bytes32 initialState) internal {\\n    require(states[initialState].hasBeenCreated, \\\"the initial state has not been created yet\\\");\\n    require(\\n      currentState == 0,\\n      \\\"the current state has already been set, so you cannot configure the initial state and override it\\\"\\n    );\\n    currentState = initialState;\\n  }\\n\\n  /**\\n   * @notice Function that checks if we can trigger a transition between two states\\n   * @dev This checks if the states exist, if the user has a role to go to the chosen next state and\\n   * @dev and if all the preconditions give the ok.\\n   */\\n  function checkAllTransitionCriteria(bytes32 fromState, bytes32 toState) private view {\\n    require(states[fromState].hasBeenCreated, \\\"the from state has not been configured in this object\\\");\\n    require(states[toState].hasBeenCreated, \\\"the to state has not been configured in this object\\\");\\n    require(\\n      checkNextStates(fromState, toState),\\n      \\\"the requested next state is not an allowed next state for this transition\\\"\\n    );\\n    require(\\n      checkAllowedRoles(toState),\\n      \\\"the sender of this transaction does not have a role that allows transition between the from and to states\\\"\\n    );\\n    checkPreConditions(fromState, toState);\\n  }\\n\\n  /**\\n   * @notice Checks if it is allowed to transition between the given states\\n   */\\n  function checkNextStates(bytes32 fromState, bytes32 toState) private view returns (bool hasNextState) {\\n    hasNextState = false;\\n    bytes32[] storage nextStates = states[fromState].nextStates;\\n    for (uint256 i = 0; i < nextStates.length; i++) {\\n      if (keccak256(abi.encodePacked(nextStates[i])) == keccak256(abi.encodePacked(toState))) {\\n        hasNextState = true;\\n        break;\\n      }\\n    }\\n  }\\n\\n  /**\\n   * @notice Checks all the custom preconditions that determine if it is allowed to transition to a next state\\n   * @dev Make sure the preconditions require or assert their checks and have an understandable error message\\n   */\\n  function checkPreConditions(bytes32 fromState, bytes32 toState) private view {\\n    function(bytes32, bytes32) internal view[] storage preConditions = states[toState].preConditions;\\n    for (uint256 i = 0; i < preConditions.length; i++) {\\n      preConditions[i](fromState, toState);\\n    }\\n  }\\n\\n  /**\\n   * @notice Checks if the sender has a role that is allowed to transition to a next state\\n   */\\n  function checkAllowedRoles(bytes32 toState) private view returns (bool isAllowed) {\\n    isAllowed = false;\\n    bytes32[] storage allowedRoles = states[toState].allowedRoles;\\n    if (allowedRoles.length == 0) {\\n      isAllowed = true;\\n    }\\n    for (uint256 i = 0; i < allowedRoles.length; i++) {\\n      if (canPerform(msg.sender, allowedRoles[i])) {\\n        isAllowed = true;\\n        break;\\n      }\\n    }\\n  }\\n}\\n\",\"keccak256\":\"0x515ede4501cfe0dcacc7cc3da9b1dd04d4d50f68e12a5e20bc81191f88f6f893\",\"license\":\"MIT\"},\"contracts/_library/provenance/statemachine/StateMachineRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../authentication/Secured.sol\\\";\\nimport \\\"../../utility/syncing/Syncable.sol\\\";\\nimport \\\"./StateMachine.sol\\\";\\n\\n/**\\n * @title Base contract for state machine registries\\n */\\ncontract StateMachineRegistry is Secured, Syncable {\\n  event StateMachineRegistered(address statemachine);\\n\\n  bytes32 public constant INSERT_STATEMACHINE_ROLE = \\\"INSERT_STATEMACHINE_ROLE\\\";\\n\\n  mapping(address => StateMachine) internal _stateMachines;\\n  address[] internal _stateMachineIndex;\\n\\n  constructor(address gateKeeper) Secured(gateKeeper) {}\\n\\n  /**\\n   * @notice Inserts a statemachine into the registry\\n   * @dev Emits the StateMachineRegistered event after the state machine has been included to the registry\\n   * @param statemachine the state machine's address\\n   */\\n  function insert(address statemachine)\\n    public\\n    authWithCustomReason(INSERT_STATEMACHINE_ROLE, \\\"Sender needs INSERT_STATEMACHINE_ROLE\\\")\\n  {\\n    _stateMachines[statemachine] = StateMachine(statemachine);\\n    _stateMachineIndex.push(statemachine);\\n    emit StateMachineRegistered(statemachine);\\n  }\\n\\n  /**\\n   * @notice Returns the length of the state machine index\\n   * @dev Returns the length of the state machine index\\n   * @return length the amount of items in the state machine index\\n   */\\n  function getIndexLength() public view override returns (uint256 length) {\\n    length = _stateMachineIndex.length;\\n  }\\n\\n  function getByIndex(uint256 index) public view returns (address key, address contractAddress) {\\n    return getByKey(_stateMachineIndex[index]);\\n  }\\n\\n  function getByKey(address someKey) public view returns (address key, address contractAddress) {\\n    key = someKey;\\n    contractAddress = address(_stateMachines[someKey]);\\n  }\\n\\n  /**\\n   * @notice Retrieves the state machine index\\n   * @return index an array with the addresses of all statemachines\\n   */\\n  function getIndex() public view returns (address[] memory index) {\\n    return _stateMachineIndex;\\n  }\\n}\\n\",\"keccak256\":\"0xabde55dc724bd34b7124bb5428fff3a860238c13cef2cf83c1fd3f5edb3b1ce1\",\"license\":\"MIT\"},\"contracts/_library/utility/conversions/Converter.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\ncontract Converter {\\n  function addressToString(address data) internal pure returns (string memory) {\\n    bytes memory s = new bytes(40);\\n    for (uint256 i = 0; i < 20; i++) {\\n      bytes1 b = bytes1(uint8(uint256(uint160(data)) / (2**(8 * (19 - i)))));\\n      bytes1 hi = bytes1(uint8(b) / 16);\\n      bytes1 lo = bytes1(uint8(b) - 16 * uint8(hi));\\n      s[2 * i] = char(hi);\\n      s[2 * i + 1] = char(lo);\\n    }\\n    return string(s);\\n  }\\n\\n  function char(bytes1 b) internal pure returns (bytes1 c) {\\n    if (uint8(b) < 10) {\\n      return bytes1(uint8(b) + 0x30);\\n    }\\n    return bytes1(uint8(b) + 0x57);\\n  }\\n\\n  function bytes32ToString(bytes32 x) internal pure returns (string memory) {\\n    bytes memory bytesString = new bytes(32);\\n    uint256 charCount = 0;\\n    for (uint256 j = 0; j < 32; j++) {\\n      bytes1 charr = bytes1(bytes32(uint256(x) * 2**(8 * j)));\\n      if (charr != 0) {\\n        bytesString[charCount] = charr;\\n        charCount++;\\n      }\\n    }\\n    bytes memory bytesStringTrimmed = new bytes(charCount);\\n    for (uint256 k = 0; k < charCount; k++) {\\n      bytesStringTrimmed[k] = bytesString[k];\\n    }\\n    return string(bytesStringTrimmed);\\n  }\\n\\n  function uintToString(uint256 i) internal pure returns (string memory) {\\n    unchecked {\\n      if (i == 0) {\\n        return \\\"0\\\";\\n      }\\n\\n      uint256 j = i;\\n      uint256 length;\\n      while (j != 0) {\\n        length++;\\n        j /= 10;\\n      }\\n\\n      uint256 ii = i;\\n      bytes memory bstr = new bytes(length);\\n      uint256 k = length - 1;\\n      while (ii != 0) {\\n        bstr[k--] = bytes1(uint8(48 + (ii % 10)));\\n        ii /= 10;\\n      }\\n\\n      return string(bstr);\\n    }\\n  }\\n}\\n\",\"keccak256\":\"0x7b4a1f950a299fd21d157843c75500f7c5e3722bfb957625c5df9438431d52c4\",\"license\":\"MIT\"},\"contracts/_library/utility/syncing/Syncable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n/**\\n * Copyright (C) SettleMint NV - All Rights Reserved\\n *\\n * Use of this file is strictly prohibited without an active license agreement.\\n * Distribution of this file, via any medium, is strictly prohibited.\\n *\\n * For license inquiries, contact hello@settlemint.com\\n */\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title The listable item should also implement\\n */\\nabstract contract Syncable {\\n  function getIndexLength() public view virtual returns (uint256 length);\\n\\n  // Waiting for the time we can return structs from functions!\\n  // function getByIndex(uint index) constant public returns (address key, bool hasRole){\\n  // function getByKey(address _key) constant public returns (address key, bool hasRole){\\n\\n  // Since ABIEncoderV2 we can now return the entire registry as address list in one call\\n  // function getIndex() constant public returns (address[] index) {\\n\\n  // Since ABIEncoderV2 we can now return the entire registry as an array of structs in one call\\n  // function getContents() constant public returns (Struct[] memory items) {\\n}\\n\",\"keccak256\":\"0x6a47441ebbf54d1c1f572a494eedd01f1f894289168a457af32a4a64b355b545\",\"license\":\"MIT\"},\"contracts/supplychain/SupplyChainRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// SettleMint.com\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../_library/provenance/statemachine/StateMachineRegistry.sol\\\";\\n\\n/**\\n * @title Registry contract for supplychain state machines\\n */\\ncontract SupplyChainRegistry is StateMachineRegistry {\\n  constructor(address gateKeeper) StateMachineRegistry(gateKeeper) {}\\n}\\n\",\"keccak256\":\"0x6d2be533af9a012cedeb0bcabb0fe5cfb40544e0680ce18de6cef2a84b76183a\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516105e33803806105e383398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b610550806100936000396000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c8063498770381161005b578063498770381461011557806381045ead14610144578063bc902ad214610159578063e1ba7d011461016e57600080fd5b806319357f6b146100825780632d883a73146100b757806345d61ded146100ea575b600080fd5b6100a477494e534552545f53544154454d414348494e455f524f4c4560401b81565b6040519081526020015b60405180910390f35b6100ca6100c53660046103d9565b610176565b604080516001600160a01b039384168152929091166020830152016100ae565b6000546100fd906001600160a01b031681565b6040516001600160a01b0390911681526020016100ae565b6100ca6101233660046103f2565b6001600160a01b038082166000908152600160205260409020549192911690565b61014c6101ce565b6040516100ae919061041b565b61016c6101673660046103f2565b610230565b005b6002546100a4565b6000806101c56002848154811061018f5761018f610468565b6000918252602090912001546001600160a01b03166001600160a01b038082166000908152600160205260409020549192911690565b91509150915091565b6060600280548060200260200160405190810160405280929190818152602001828054801561022657602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610208575b5050505050905090565b77494e534552545f53544154454d414348494e455f524f4c4560401b6040518060600160405280602581526020016104f66025913961026f3383610334565b81906102975760405162461bcd60e51b815260040161028e919061047e565b60405180910390fd5b506001600160a01b038316600081815260016020818152604080842080546001600160a01b031990811687179091556002805494850181559094527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace90920180549093168417909255519182527fc3a7a2bf484e19fc97d2833ddd72ce199320147e7a660b28f9d1be4e868c4913910160405180910390a1505050565b600080546001600160a01b031615806103d25750600054604051630dace25b60e31b81526001600160a01b0385811660048301523060248301526044820185905290911690636d6712d89060640160206040518083038186803b15801561039a57600080fd5b505afa1580156103ae573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103d291906104d3565b9392505050565b6000602082840312156103eb57600080fd5b5035919050565b60006020828403121561040457600080fd5b81356001600160a01b03811681146103d257600080fd5b6020808252825182820181905260009190848201906040850190845b8181101561045c5783516001600160a01b031683529284019291840191600101610437565b50909695505050505050565b634e487b7160e01b600052603260045260246000fd5b600060208083528351808285015260005b818110156104ab5785810183015185820160400152820161048f565b818111156104bd576000604083870101525b50601f01601f1916929092016040019392505050565b6000602082840312156104e557600080fd5b815180151581146103d257600080fdfe53656e646572206e6565647320494e534552545f53544154454d414348494e455f524f4c45a2646970667358221220bf32d64e2df598228efc7c7bc1eaa0fc9ceba0a268746092b710f30c81f8376d64736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c8063498770381161005b578063498770381461011557806381045ead14610144578063bc902ad214610159578063e1ba7d011461016e57600080fd5b806319357f6b146100825780632d883a73146100b757806345d61ded146100ea575b600080fd5b6100a477494e534552545f53544154454d414348494e455f524f4c4560401b81565b6040519081526020015b60405180910390f35b6100ca6100c53660046103d9565b610176565b604080516001600160a01b039384168152929091166020830152016100ae565b6000546100fd906001600160a01b031681565b6040516001600160a01b0390911681526020016100ae565b6100ca6101233660046103f2565b6001600160a01b038082166000908152600160205260409020549192911690565b61014c6101ce565b6040516100ae919061041b565b61016c6101673660046103f2565b610230565b005b6002546100a4565b6000806101c56002848154811061018f5761018f610468565b6000918252602090912001546001600160a01b03166001600160a01b038082166000908152600160205260409020549192911690565b91509150915091565b6060600280548060200260200160405190810160405280929190818152602001828054801561022657602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610208575b5050505050905090565b77494e534552545f53544154454d414348494e455f524f4c4560401b6040518060600160405280602581526020016104f66025913961026f3383610334565b81906102975760405162461bcd60e51b815260040161028e919061047e565b60405180910390fd5b506001600160a01b038316600081815260016020818152604080842080546001600160a01b031990811687179091556002805494850181559094527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace90920180549093168417909255519182527fc3a7a2bf484e19fc97d2833ddd72ce199320147e7a660b28f9d1be4e868c4913910160405180910390a1505050565b600080546001600160a01b031615806103d25750600054604051630dace25b60e31b81526001600160a01b0385811660048301523060248301526044820185905290911690636d6712d89060640160206040518083038186803b15801561039a57600080fd5b505afa1580156103ae573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103d291906104d3565b9392505050565b6000602082840312156103eb57600080fd5b5035919050565b60006020828403121561040457600080fd5b81356001600160a01b03811681146103d257600080fd5b6020808252825182820181905260009190848201906040850190845b8181101561045c5783516001600160a01b031683529284019291840191600101610437565b50909695505050505050565b634e487b7160e01b600052603260045260246000fd5b600060208083528351808285015260005b818110156104ab5785810183015185820160400152820161048f565b818111156104bd576000604083870101525b50601f01601f1916929092016040019392505050565b6000602082840312156104e557600080fd5b815180151581146103d257600080fdfe53656e646572206e6565647320494e534552545f53544154454d414348494e455f524f4c45a2646970667358221220bf32d64e2df598228efc7c7bc1eaa0fc9ceba0a268746092b710f30c81f8376d64736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getIndex()": {
+        "returns": {
+          "index": "an array with the addresses of all statemachines"
+        }
+      },
+      "getIndexLength()": {
+        "details": "Returns the length of the state machine index",
+        "returns": {
+          "length": "the amount of items in the state machine index"
+        }
+      },
+      "insert(address)": {
+        "details": "Emits the StateMachineRegistered event after the state machine has been included to the registry",
+        "params": {
+          "statemachine": "the state machine's address"
+        }
+      }
+    },
+    "title": "Registry contract for supplychain state machines",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getIndex()": {
+        "notice": "Retrieves the state machine index"
+      },
+      "getIndexLength()": {
+        "notice": "Returns the length of the state machine index"
+      },
+      "insert(address)": {
+        "notice": "Inserts a statemachine into the registry"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 2246,
+        "contract": "contracts/supplychain/SupplyChainRegistry.sol:SupplyChainRegistry",
+        "label": "gateKeeper",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(GateKeeper)1978"
+      },
+      {
+        "astId": 4390,
+        "contract": "contracts/supplychain/SupplyChainRegistry.sol:SupplyChainRegistry",
+        "label": "_stateMachines",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_contract(StateMachine)4300)"
+      },
+      {
+        "astId": 4393,
+        "contract": "contracts/supplychain/SupplyChainRegistry.sol:SupplyChainRegistry",
+        "label": "_stateMachineIndex",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_contract(GateKeeper)1978": {
+        "encoding": "inplace",
+        "label": "contract GateKeeper",
+        "numberOfBytes": "20"
+      },
+      "t_contract(StateMachine)4300": {
+        "encoding": "inplace",
+        "label": "contract StateMachine",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_contract(StateMachine)4300)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => contract StateMachine)",
+        "numberOfBytes": "32",
+        "value": "t_contract(StateMachine)4300"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+.vscode
+types/truffle-contracts
+cache
+artifacts
+build
+dist
+coverage
+coverage.json
+graphql.ts
+typechain-types
+.secrets

@@ -1,0 +1,34 @@
+{
+  "ipfsRequiredFields": [
+  ],
+
+  "ipfsOptionalFields": [],
+
+  "contractOptionnalFields": [],
+
+  "contractRequiredFields": ["maltingDate", "brewingDate", "fermentationDate", "maturationDate", "bottlingDate"],
+
+  "fileFields": [],
+
+  "dateFields": ["maltingDate", "brewingDate", "fermentationDate", "maturationDate", "bottlingDate"],
+
+  "dateTimeFields" : ["harvestDate"],
+
+  "textFields": [],
+
+  "selectFields": {
+  },
+
+  "knownWalletSelectFields": [],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": ["addMaltingDate", "addBrewingDate", "addFermentationDate", "addMaturationDate", "addBottlingDate"],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "listFields": []
+}
